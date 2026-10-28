@@ -1,0 +1,93 @@
+[
+  {
+    "id": "res-bullying",
+    "title": "Recognizing Bullying & How It Differs From Normal Conflicts",
+    "category": "Bullying & Teasing",
+    "summary": "Understand what constitutes bullying, subtle teasing, and how power imbalances work.",
+    "content": "Bullying is unwanted, aggressive behavior among school-aged children that involves a real or perceived power imbalance. The behavior is repeated, or has the potential to be repeated, over time. It can be verbal (name-calling, teasing), social (leaving someone out, spreading rumors), or physical (hitting, tripping, breaking belongings). Remember: playful teasing stops when someone says 'stop'. If it continues, it is bullying.",
+    "actionable_tips": [
+      "Keep a private log of dates, times, witnesses, and what was said or done.",
+      "Do not retaliate or engage in physical fights—that can put you at risk of injury or unfair blame.",
+      "Stay in visible, populated areas with friends or near teachers during breaks.",
+      "Identify one teacher, school counselor, or staff member you feel comfortable approaching."
+    ],
+    "tags": ["bullying", "teasing", "school", "social"],
+    "urgency_relevance": ["low", "moderate"]
+  },
+  {
+    "id": "res-cyberbullying",
+    "title": "Cyberbullying & Reporting Harmful Online Content",
+    "category": "Online Safety",
+    "summary": "Practical steps when facing group chat harassment, rumor circulation, or fake social profiles.",
+    "content": "Cyberbullying takes place over digital devices like cell phones, computers, and tablets. It includes sending, posting, or sharing negative, harmful, false, or mean content about someone else. Because digital content can be public and persistent, it can feel overwhelming. Remember: you are not responsible for other people's malicious behavior online.",
+    "actionable_tips": [
+      "Take screenshots immediately of posts, comments, profiles, and messages before they are deleted.",
+      "Do not reply or escalate. Bullies often thrive on emotional reactions.",
+      "Use platform reporting tools (Instagram, WhatsApp, Snapchat) to report abusive accounts.",
+      "Block the harassing accounts, but keep the saved screenshots in a secure folder.",
+      "If harassment continues, share the screenshots with your school's IT coordinator or parents."
+    ],
+    "tags": ["cyberbullying", "social media", "whatsapp", "online safety"],
+    "urgency_relevance": ["moderate", "high"]
+  },
+  {
+    "id": "res-boundaries",
+    "title": "Personal Boundaries & Bodily Autonomy",
+    "category": "Personal Boundaries",
+    "summary": "Understanding safe touch, unsafe touch, personal space, and the 'No, Go, Tell' safety rule.",
+    "content": "Your body belongs to you. Nobody—whether an older student, relative, neighbor, teacher, or stranger—has the right to touch you in private areas, make sexualized comments about your body, or demand that you keep an uncomfortable touch a secret. Safe touches make you feel comfortable and respected. Unsafe touches make you feel confused, guilty, frightened, or uncomfortable.",
+    "actionable_tips": [
+      "Trust your gut feelings: If someone's behavior makes you uneasy, your instinct is valid.",
+      "Remember the 'No, Go, Tell' rule: Say 'NO' firmly, 'GO' away to a populated area, and 'TELL' a trusted adult immediately.",
+      "Never keep uncomfortable secrets: Anyone asking a child or teen to keep a body-related secret is breaking safety rules.",
+      "You are never to blame for someone else violating your boundaries."
+    ],
+    "tags": ["boundaries", "safe touch", "consent", "safety"],
+    "urgency_relevance": ["moderate", "high", "urgent"]
+  },
+  {
+    "id": "res-talk-adult",
+    "title": "How to Ask a Trusted Adult for Help",
+    "category": "Communication",
+    "summary": "Scripts and tips for approaching parents, teachers, or counselors when you feel anxious or afraid.",
+    "content": "Opening up to an adult can feel daunting. You might fear being dismissed, getting someone else in trouble, or making things worse. However, caring adults have the legal responsibility and practical authority to protect you. Choosing the right adult and framing your words simply makes the process much smoother.",
+    "actionable_tips": [
+      "Pick a calm moment rather than during a rush or commute.",
+      "Use a simple opening sentence: 'I need to tell you something that is bothering me at school, and I need your advice.'",
+      "If speaking aloud feels too scary, write your thoughts on a note or send a short text message first.",
+      "If the first adult does not listen or dismisses you, do not give up—approach a different teacher or school counselor."
+    ],
+    "tags": ["trusted adult", "communication", "parents", "teachers"],
+    "urgency_relevance": ["low", "moderate", "high"]
+  },
+  {
+    "id": "res-exam-stress",
+    "title": "Managing Academic Pressure & Exam Anxiety",
+    "category": "Well-Being",
+    "summary": "Techniques to calm test anxiety, manage sleep cycles, and handle parental expectations.",
+    "content": "High academic expectations can trigger physical anxiety like rapid heartbeats, sleeplessness, and headaches. While wanting to do well is natural, chronic anxiety hurts concentration and well-being. Academic grades do not define your human worth, intelligence, or future possibilities.",
+    "actionable_tips": [
+      "Use the 4-7-8 breathing method: Inhale for 4 seconds, hold for 7, exhale slowly for 8 to reset your nervous system.",
+      "Break revision into 25-minute Pomodoro sessions with strict 5-minute movement breaks.",
+      "Prioritize at least 7-8 hours of sleep; pulling all-nighters reduces memory retention by up to 40%.",
+      "Have an honest talk with parents: 'I am doing my best, but high pressure is making it harder to concentrate.'"
+    ],
+    "tags": ["exam stress", "academics", "anxiety", "mindfulness"],
+    "urgency_relevance": ["low"]
+  },
+  {
+    "id": "res-friendship",
+    "title": "Navigating Friendship Drama & Peer Pressure",
+    "category": "Friends & Relationships",
+    "summary": "Dealing with silent treatments, gossip, exclusion, and learning to set healthy peer limits.",
+    "content": "Friendships during school years are central to our daily lives, so when a conflict arises, it can feel like your entire world is shaking. Healthy friendships are built on mutual respect, listening, and allowing each other to have other friends. Manipulative friendships rely on jealousy, guilt trips, and gossip.",
+    "actionable_tips": [
+      "Distinguish between a temporary disagreement and an ongoing pattern of disrespect.",
+      "Communicate with 'I' statements: 'I felt hurt when plans were made without me' rather than blaming.",
+      "Take space if a friend is constantly criticizing or belittling you.",
+      "Expand your social circle by joining a school club or hobby group outside your immediate classroom circle."
+    ],
+    "tags": ["friendship", "peer pressure", "relationships"],
+    "urgency_relevance": ["low", "moderate"]
+  }
+]

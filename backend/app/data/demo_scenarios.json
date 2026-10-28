@@ -1,0 +1,162 @@
+[
+  {
+    "id": "scenario-1",
+    "title": "Everyday Exam Stress",
+    "description": "Feeling anxious, overwhelmed, and unable to sleep before upcoming board exams.",
+    "expected_urgency": "low",
+    "concern_type": "academic_stress",
+    "initial_message": "I have exams next week and I feel really anxious and overwhelmed. I can't sleep and my heart races when I open my books.",
+    "sample_dialogue": [
+      {
+        "sender": "student",
+        "text": "I have exams next week and I feel really anxious and overwhelmed. I can't sleep and my heart races when I open my books."
+      },
+      {
+        "sender": "sakhi",
+        "text": "It is completely understandable to feel nervous before exams, but your well-being comes first. You are capable, and stress doesn't define what you can achieve. Would you like a quick calming technique or practical ways to break study time into small steps?"
+      },
+      {
+        "sender": "student",
+        "text": "Yes, breaking it into small steps sounds helpful."
+      },
+      {
+        "sender": "sakhi",
+        "text": "Try the 25-minute focus rule: study one topic for 25 minutes, then take a 5-minute break with water and fresh air. Remember, no single test determines your worth. Talking to your teacher or parents about how you feel can also take off a lot of pressure."
+      }
+    ],
+    "tags": ["Fictional Demo", "Low Urgency", "Academic Stress"],
+    "learning_takeaway": "De-escalates everyday school tension with compassionate grounding and study pacing without clinical over-reaction."
+  },
+  {
+    "id": "scenario-2",
+    "title": "Repeated Classroom Teasing",
+    "description": "A group of classmates repeatedly mocks a student's appearance and excludes her during lunch.",
+    "expected_urgency": "moderate",
+    "concern_type": "bullying",
+    "initial_message": "Some girls in my class make fun of me every day during lunch. They laugh at my clothes and tell others not to sit with me.",
+    "sample_dialogue": [
+      {
+        "sender": "student",
+        "text": "Some girls in my class make fun of me every day during lunch. They laugh at my clothes and tell others not to sit with me."
+      },
+      {
+        "sender": "sakhi",
+        "text": "I'm sorry you are going through this. Being treated that way can feel really hurtful and isolating. You do not deserve to be mocked or excluded. Has this been happening for a long time, and is there anyone you currently feel comfortable sitting with?"
+      },
+      {
+        "sender": "student",
+        "text": "It's been going on for two weeks. I just sit alone in the library."
+      },
+      {
+        "sender": "sakhi",
+        "text": "Thank you for sharing that with me. It takes courage to speak up. Because this is repeated behavior, it helps to quietly note the dates and times. You don't have to face this alone—a trusted teacher or school counselor can step in to stop this behavior safely."
+      }
+    ],
+    "tags": ["Fictional Demo", "Moderate Urgency", "Bullying"],
+    "learning_takeaway": "Validates feelings, identifies repeated patterns as bullying, recommends documenting and approaching a trusted adult."
+  },
+  {
+    "id": "scenario-3",
+    "title": "Cyberbullying & Group Harassment",
+    "description": "Mean memes and private screenshots being circulated in a class WhatsApp group without consent.",
+    "expected_urgency": "moderate",
+    "concern_type": "cyberbullying",
+    "initial_message": "Someone created an anonymous account on Instagram and is posting mean memes about me, and now people are sharing it in our class group chat.",
+    "sample_dialogue": [
+      {
+        "sender": "student",
+        "text": "Someone created an anonymous account on Instagram and is posting mean memes about me, and now people are sharing it in our class group chat."
+      },
+      {
+        "sender": "sakhi",
+        "text": "I hear how distressing and unfair this is. Online cruelty can feel overwhelming because it follows you home, but please know this is not your fault. Step one: do not reply or argue back to the account. Have you taken screenshots of the posts and the username for records?"
+      },
+      {
+        "sender": "student",
+        "text": "I took screenshots, but I'm afraid people will get mad if I tell a teacher."
+      },
+      {
+        "sender": "sakhi",
+        "text": "Saving those screenshots was a very smart move. It's natural to worry about reactions, but school authorities and platform reporting mechanisms are specifically designed to address digital harassment confidentially. We can help you prepare what to say to a trusted teacher."
+      }
+    ],
+    "tags": ["Fictional Demo", "Moderate-High Urgency", "Cyberbullying"],
+    "learning_takeaway": "Provides digital safety steps (screenshot, don't engage, report) and addresses fear of retaliation."
+  },
+  {
+    "id": "scenario-4",
+    "title": "Uncomfortable Personal Boundary Situation",
+    "description": "An older student or acquaintance repeatedly stands too close, makes unwelcome personal remarks, and won't leave her alone.",
+    "expected_urgency": "high",
+    "concern_type": "personal_boundaries",
+    "initial_message": "An older boy at my tuition centre keeps following me to the bus stop and saying weird things about my body. He asked me not to tell anyone.",
+    "sample_dialogue": [
+      {
+        "sender": "student",
+        "text": "An older boy at my tuition centre keeps following me to the bus stop and saying weird things about my body. He asked me not to tell anyone."
+      },
+      {
+        "sender": "sakhi",
+        "text": "Your feelings are completely valid, and your discomfort is an important signal. You have an absolute right to bodily autonomy and safety. When someone tells you 'don't tell anyone', that is a red flag. You did nothing wrong, and you should never have to keep a secret that makes you feel unsafe."
+      },
+      {
+        "sender": "student",
+        "text": "Who should I tell? I'm scared he will wait for me tomorrow."
+      },
+      {
+        "sender": "sakhi",
+        "text": "Please tell a parent, tuition teacher, or older sibling right away today before tomorrow's class. For tomorrow, do not walk to the bus stop alone—stay inside with the tutor or walk alongside a group of friends. Let's draft a simple message you can say to your parents today."
+      }
+    ],
+    "tags": ["Fictional Demo", "High Urgency", "Boundary Violation"],
+    "learning_takeaway": "Breaks the secrecy trap, validates personal boundaries, creates immediate physical safety buffer and trusted adult script."
+  },
+  {
+    "id": "scenario-5",
+    "title": "Threatening Message & Coercion",
+    "description": "Receiving blackmail threats or messages demanding money/photos with threats of leaking personal conversations.",
+    "expected_urgency": "high",
+    "concern_type": "threats_and_coercion",
+    "initial_message": "Someone sent me a message saying if I don't give them money by tomorrow they will leak fake pictures of me and ruin my reputation at school.",
+    "sample_dialogue": [
+      {
+        "sender": "student",
+        "text": "Someone sent me a message saying if I don't give them money by tomorrow they will leak fake pictures of me and ruin my reputation at school."
+      },
+      {
+        "sender": "sakhi",
+        "text": "This is illegal extortion and blackmail. Please take a deep breath: giving in to demands never stops them, so do not send any money or respond. You have not done anything wrong. This requires adult intervention and cyber-safety reporting right away."
+      },
+      {
+        "sender": "student",
+        "text": "I feel so scared and sick. What if my parents get mad at me?"
+      },
+      {
+        "sender": "sakhi",
+        "text": "It is completely normal to feel terrified, but adults and cyber police deal with these exact online scammers every single day. Parents care about your safety above all else. We can craft a gentle conversation starter so you can speak to a trusted adult today without fear."
+      }
+    ],
+    "tags": ["Fictional Demo", "High Urgency", "Coercion"],
+    "learning_takeaway": "Classifies coercion/threats, prevents giving in to extortion, guides student to trusted adults and cyber safety channels."
+  },
+  {
+    "id": "scenario-6",
+    "title": "Immediate Danger / Unsafe Location",
+    "description": "Being pursued, trapped, or facing imminent physical violence or immediate harm.",
+    "expected_urgency": "urgent",
+    "concern_type": "immediate_danger",
+    "initial_message": "Someone is trying to break into the school washroom while I'm inside and banging on the door. I am terrified.",
+    "sample_dialogue": [
+      {
+        "sender": "student",
+        "text": "Someone is trying to break into the school washroom while I'm inside and banging on the door. I am terrified."
+      },
+      {
+        "sender": "sakhi",
+        "text": "URGENT SAFETY ALERT: If you are in immediate danger right now, call out loudly for help or dial 112 / 1098 immediately. Do not stay silent. Keep the door locked. If you can make a call, call the school office, a teacher, or security right now. This AI cannot send emergency personnel."
+      }
+    ],
+    "tags": ["Fictional Demo", "Urgent Emergency", "Immediate Danger"],
+    "learning_takeaway": "Immediate priority safety instructions, emergency number prompts, clear statement that AI does not dispatch help."
+  }
+]

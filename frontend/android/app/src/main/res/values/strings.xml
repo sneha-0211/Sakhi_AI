@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">SAKHI AI</string>
+    <string name="title_activity_main">SAKHI AI</string>
+    <string name="package_name">org.sakhiai.app</string>
+    <string name="custom_url_scheme">org.sakhiai.app</string>
+</resources>

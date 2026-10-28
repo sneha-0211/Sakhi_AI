@@ -1,0 +1,57 @@
+[
+  {
+    "id": "em-112",
+    "name": "Emergency Response Support System (ERSS)",
+    "number": "112",
+    "description": "Unified all-in-one emergency helpline for Police, Fire, and Ambulance in immediate danger.",
+    "category": "Emergency & Police",
+    "official_portal": "https://112.gov.in",
+    "availability": "24 hours / 7 days a week, Toll-Free",
+    "verification_status": "Official Govt. of India Emergency Service",
+    "disclaimer": "Call 112 immediately if there is physical danger, violence, or imminent risk to life. SAKHI AI does NOT dispatch police or ambulance."
+  },
+  {
+    "id": "em-1098",
+    "name": "CHILDLINE / Child Helpline",
+    "number": "1098",
+    "description": "24/7 dedicated emergency assistance, rescue, and counseling for children in distress across India.",
+    "category": "Child Protection",
+    "official_portal": "https://wcd.nic.in",
+    "availability": "24 hours / 7 days a week, Free call",
+    "verification_status": "Ministry of Women & Child Development Verified",
+    "disclaimer": "Directly links children to child protection officers, counselors, and safe shelters."
+  },
+  {
+    "id": "em-1091",
+    "name": "Women & Girls Helpline",
+    "number": "1091",
+    "description": "Specialized toll-free helpline providing immediate police assistance and counseling to women and girls.",
+    "category": "Safety & Harassment",
+    "official_portal": "https://ncw.nic.in",
+    "availability": "24/7 Toll-Free",
+    "verification_status": "National Commission for Women / State Police",
+    "disclaimer": "Assists with street harassment, stalking, school transit safety, and threats."
+  },
+  {
+    "id": "em-1930",
+    "name": "National Cyber Crime Reporting Helpline",
+    "number": "1930",
+    "description": "Specialized portal and helpline to report online blackmail, fake accounts, leaks, and cyber harassment.",
+    "category": "Cyber Safety",
+    "official_portal": "https://cybercrime.gov.in",
+    "availability": "24/7 Support",
+    "verification_status": "Ministry of Home Affairs (I4C)",
+    "disclaimer": "Submit screenshots, report accounts, and request takedown of non-consensual content."
+  },
+  {
+    "id": "em-14416",
+    "name": "Tele-MANAS Comprehensive Mental Health Helpline",
+    "number": "14416 / 1800-891-4416",
+    "description": "National tele-mental health programme providing free, confidential counseling by certified clinical psychologists.",
+    "category": "Emotional Well-Being",
+    "official_portal": "https://telemanas.mohfw.gov.in",
+    "availability": "24/7 Multi-lingual Toll-Free",
+    "verification_status": "Ministry of Health & Family Welfare",
+    "disclaimer": "Free psychological first-aid and emotional distress counseling."
+  }
+]

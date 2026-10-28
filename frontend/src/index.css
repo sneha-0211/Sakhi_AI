@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-[#F7F5FF] text-slate-800 antialiased font-sans min-h-screen selection:bg-sakhi-lavender-200 selection:text-sakhi-lavender-900;
+  }
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* ──────────────────────────────────────────────
+   GLASSMORPHISM HELPERS
+────────────────────────────────────────────── */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.65);
+}
+
+.glass-bubble-user {
+  background: linear-gradient(135deg, #7633E6 0%, #5D1CBF 60%, #4A0EA8 100%);
+  color: white;
+  box-shadow: 0 8px 24px rgba(118, 51, 230, 0.35), 0 2px 8px rgba(118, 51, 230, 0.2);
+}
+
+.glass-bubble-sakhi {
+  background: rgba(255, 255, 255, 0.97);
+  border: 1px solid rgba(227, 213, 255, 0.7);
+  box-shadow: 0 4px 20px rgba(118, 51, 230, 0.06), 0 1px 4px rgba(0,0,0,0.03);
+}
+
+/* Safe area for mobile notch & bottom bar */
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 1.5rem);
+}
+
+/* ──────────────────────────────────────────────
+   NO SCROLLBAR UTILITY
+────────────────────────────────────────────── */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* ──────────────────────────────────────────────
+   VIBRANT HIGHLIGHT COLORS
+────────────────────────────────────────────── */
+/* Lavender glow for primary interactive elements */
+.highlight-lavender {
+  background: linear-gradient(135deg, #8E51FF 0%, #7633E6 100%);
+  box-shadow: 0 4px 20px rgba(118, 51, 230, 0.4), 0 1px 6px rgba(118, 51, 230, 0.2);
+  color: white;
+}
+.highlight-lavender:hover {
+  box-shadow: 0 8px 30px rgba(118, 51, 230, 0.55), 0 2px 8px rgba(118, 51, 230, 0.3);
+  transform: translateY(-1px);
+}
+
+/* Teal glow for resource/action elements */
+.highlight-teal {
+  background: linear-gradient(135deg, #14B8A6 0%, #0D9488 100%);
+  box-shadow: 0 4px 20px rgba(20, 184, 166, 0.4), 0 1px 6px rgba(20, 184, 166, 0.2);
+  color: white;
+}
+
+/* Emergency red glow */
+.highlight-emergency {
+  background: linear-gradient(135deg, #F43F5E 0%, #DC2626 100%);
+  box-shadow: 0 4px 20px rgba(244, 63, 94, 0.45), 0 1px 6px rgba(220, 38, 38, 0.25);
+  color: white;
+}
+
+/* Amber for warnings */
+.highlight-amber {
+  background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+  box-shadow: 0 4px 20px rgba(245, 158, 11, 0.4);
+  color: white;
+}
+
+/* ──────────────────────────────────────────────
+   GRADIENT BACKGROUNDS
+────────────────────────────────────────────── */
+.bg-gradient-sakhi {
+  background: linear-gradient(135deg, #8E51FF 0%, #7633E6 40%, #0D9488 100%);
+}
+
+.bg-gradient-hero {
+  background: linear-gradient(135deg,
+    #6D28D9 0%,
+    #7633E6 25%,
+    #5D1CBF 55%,
+    #0F766E 100%
+  );
+}
+
+.bg-gradient-card-lavender {
+  background: linear-gradient(135deg, #F8F5FF 0%, #F0EAFF 100%);
+}
+.bg-gradient-card-teal {
+  background: linear-gradient(135deg, #F0FDF9 0%, #CCFBF1 100%);
+}
+.bg-gradient-card-rose {
+  background: linear-gradient(135deg, #FFF1F2 0%, #FFE4E6 100%);
+}
+
+/* ──────────────────────────────────────────────
+   SHIMMER LOADING ANIMATION
+────────────────────────────────────────────── */
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+.shimmer {
+  background: linear-gradient(90deg, #f0eaff 25%, #e3d5ff 50%, #f0eaff 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+/* ──────────────────────────────────────────────
+   PULSE RING ANIMATION (for live indicators)
+────────────────────────────────────────────── */
+@keyframes pulse-ring {
+  0%   { transform: scale(1); opacity: 0.8; }
+  70%  { transform: scale(2.2); opacity: 0; }
+  100% { transform: scale(2.2); opacity: 0; }
+}
+.pulse-ring {
+  position: relative;
+}
+.pulse-ring::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: currentColor;
+  animation: pulse-ring 1.8s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* ──────────────────────────────────────────────
+   FEATURE CARD HOVER GLOW
+────────────────────────────────────────────── */
+.feature-card {
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(142, 81, 255, 0.12);
+}
+.feature-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(118, 51, 230, 0.12), 0 4px 12px rgba(0, 0, 0, 0.06);
+  border-color: rgba(142, 81, 255, 0.25);
+}
+
+/* ──────────────────────────────────────────────
+   CATEGORY CARD ACTIVE STATE
+────────────────────────────────────────────── */
+.category-card-active {
+  transform: translateY(-2px) scale(1.01);
+  box-shadow: 0 8px 30px rgba(118, 51, 230, 0.2);
+}
+
+/* ──────────────────────────────────────────────
+   URGENCY BADGE GLOWS
+────────────────────────────────────────────── */
+.urgency-low    { box-shadow: 0 2px 10px rgba(16, 185, 129, 0.3); }
+.urgency-mod    { box-shadow: 0 2px 10px rgba(245, 158, 11, 0.35); }
+.urgency-high   { box-shadow: 0 2px 10px rgba(249, 115, 22, 0.4); }
+.urgency-urgent { box-shadow: 0 2px 12px rgba(244, 63, 94, 0.5); animation: pulse 1.5s ease-in-out infinite; }
+
+/* ──────────────────────────────────────────────
+   CHAT STREAMING CURSOR
+────────────────────────────────────────────── */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+.streaming-cursor {
+  display: inline-block;
+  width: 3px;
+  height: 1em;
+  background: #7633E6;
+  border-radius: 2px;
+  margin-left: 3px;
+  vertical-align: middle;
+  animation: blink 0.8s ease-in-out infinite;
+}
+
+/* ──────────────────────────────────────────────
+   CHIP BUTTONS
+────────────────────────────────────────────── */
+.chip-btn {
+  transition: all 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.chip-btn:hover {
+  background: #F0EAFF;
+  border-color: #B088FF;
+  color: #5D1CBF;
+  transform: translateY(-1px);
+  box-shadow: 0 3px 12px rgba(118, 51, 230, 0.15);
+}
+.chip-btn:active {
+  transform: scale(0.97);
+}
+
+/* ──────────────────────────────────────────────
+   NAV LINK ACTIVE INDICATOR
+────────────────────────────────────────────── */
+.nav-active-dot {
+  position: relative;
+}
+.nav-active-dot::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #7633E6;
+}
+
+/* ──────────────────────────────────────────────
+   GRADIENT TEXT
+────────────────────────────────────────────── */
+.gradient-text-sakhi {
+  background: linear-gradient(135deg, #7633E6 0%, #0D9488 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.gradient-text-lavender {
+  background: linear-gradient(135deg, #8E51FF 0%, #7633E6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ──────────────────────────────────────────────
+   EMERGENCY PULSING BUTTON
+────────────────────────────────────────────── */
+@keyframes sos-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.5); }
+  50%       { box-shadow: 0 0 0 8px rgba(220, 38, 38, 0); }
+}
+.sos-btn {
+  animation: sos-pulse 2s ease-in-out infinite;
+}
+
+/* ──────────────────────────────────────────────
+   FLOATING PARTICLES (hero decoration)
+────────────────────────────────────────────── */
+@keyframes float-up {
+  0%   { opacity: 0; transform: translateY(0) scale(0.8); }
+  20%  { opacity: 0.6; }
+  100% { opacity: 0; transform: translateY(-60px) scale(1.2); }
+}
+.particle {
+  animation: float-up 4s ease-in-out infinite;
+}
+.particle:nth-child(2) { animation-delay: 1.3s; }
+.particle:nth-child(3) { animation-delay: 2.6s; }
+
+/* ──────────────────────────────────────────────
+   INPUT FOCUS RING ENHANCEMENT
+────────────────────────────────────────────── */
+.sakhi-input:focus {
+  outline: none;
+  border-color: #7633E6;
+  box-shadow: 0 0 0 3px rgba(118, 51, 230, 0.15), 0 2px 8px rgba(118, 51, 230, 0.1);
+}
+
