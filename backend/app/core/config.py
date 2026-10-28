@@ -12,13 +12,16 @@ class Settings(BaseModel):
     port: int = int(os.getenv("PORT", "8000"))
     
     # CORS
-    cors_origins: List[str] = [
-        "http://localhost:5173",
-        "http://127.0.0.1:5173",
-        "http://localhost:3000",
-        "capacitor://localhost",
-        "http://localhost",
-    ]
+    cors_origins: List[str] = Field(
+        default_factory=lambda: [
+            origin.strip()
+            for origin in os.getenv(
+                "CORS_ORIGINS",
+                "http://localhost:5173,http://127.0.0.1:5173,http://localhost:3000,capacitor://localhost,http://localhost"
+            ).split(",")
+            if origin.strip()
+        ]
+    )
     
     # AI Engine settings — default to 'llm' when HF_TOKEN is set
     ai_engine_mode: str = os.getenv("AI_ENGINE_MODE", "llm")
